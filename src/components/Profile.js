@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Card from '../components/Card';
-import Introduction from '../components/Introduction';
-import Likes from '../components/Likes';
-import Dislikes from '../components/Dislikes';
-import Hobbies from '../components/Hobbies';
+import Card from './Card';
+import Introduction from './Introduction';
+import Likes from './Likes';
+import Dislikes from './Dislikes';
+import Hobbies from './Hobbies';
 
 const Profile = () => {
   return (
