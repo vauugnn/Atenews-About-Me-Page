@@ -4,6 +4,7 @@ import Introduction from './components/Introduction';
 import Likes from './components/Likes';
 import Dislikes from './components/Dislikes';
 import Hobbies from './components/Hobbies';
+import NumberGuessingGame from './components/NumberGuessingGame';
 import './AboutMe.css';
 
 const AboutMe = () => {
@@ -28,37 +29,29 @@ const AboutMe = () => {
             </p>
           </div>
         </div>
+      </div>
 
-        <div className="profile-section">
-          <Card title="Introduction" content={<Introduction />} />
-        </div>
-        <div className="profile-section">
-          <Card title="Likes" content={<Likes />} />
-        </div>
-        <div className="profile-section">
-          <Card title="Dislikes" content={<Dislikes />} />
-        </div>
-        <div className="profile-section">
-          <Card title="Hobbies" content={<Hobbies />} />
-        </div>
+      <Card title="Introduction" content={<Introduction />} />
+      <Card title="Likes" content={<Likes />} />
+      <Card title="Dislikes" content={<Dislikes />} />
+      <Card title="Hobbies" content={<Hobbies />} />
 
-        <div className="social-links-container">
-            <div className="social-links">
-              <a href="https://github.com/vauugnn" className="social-link">
-                <img src="/assets/socmed/github.png" alt="GitHub" className="social-icon" />
-              </a>
-              <a href="https://www.linkedin.com/in/vaughn-roche-de-roda-92a4752ab/" className="social-link">
-                <img src="/assets/socmed/linkedin.png" alt="LinkedIn" className="social-icon" />
-              </a>
-              <a href="https://www.instagram.com/vauugnn/" className="social-link">
-                <img src="/assets/socmed/instagram.png" alt="Instagram" className="social-icon" />
-              </a>
-              <a href="https://www.facebook.com/vaughnderoda" className="social-link">
-              <img src="/assets/socmed/Facebook.png" alt="Facebook" className="social-icon" />
-              </a>
-            </div>
-          </div>
-      </div>    
+      <Card title="Number Guessing Game" content={<NumberGuessingGame />} />
+
+      <div className="social-links-container">
+        <a href="https://github.com/vauugnn" className="social-link">
+          <img src="/assets/socmed/github.png" alt="GitHub" className="social-icon" />
+        </a>
+        <a href="https://www.linkedin.com/in/vaughn-roche-de-roda-92a4752ab/" className="social-link">
+          <img src="/assets/socmed/linkedin.png" alt="LinkedIn" className="social-icon" />
+        </a>
+        <a href="https://www.instagram.com/vauugnn/" className="social-link">
+          <img src="/assets/socmed/instagram.png" alt="Instagram" className="social-icon instagram-icon" />
+        </a>
+        <a href="https://www.facebook.com/vaughnderoda" className="social-link">
+          <img src="/assets/socmed/facebook.png" alt="Facebook" className="social-icon" />
+        </a>
+      </div>
     </div>
   );
 };
