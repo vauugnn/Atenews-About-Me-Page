@@ -54,7 +54,6 @@ const AboutMe = () => {
         </a>
       </div>
 
-      <Link to="/profile">Go to Profile</Link>
     </div>
   );
 };
