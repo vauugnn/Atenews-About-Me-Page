@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Card from '../components/Card';
 import Introduction from '../components/Introduction';
 import Likes from '../components/Likes';
@@ -16,8 +17,8 @@ const Profile = () => {
       <Card title="Introduction" content={<Introduction />} />
       <Card title="Likes" content={<Likes />} />
       <Card title="Dislikes" content={<Dislikes />} />
-      <Card title="Hobbies" content={<Hobbies />} />
-      {/* Add more cards here */}
+      <Card title="Hobbies" content={<Hobbies />} />  
+      <Link to="/">Go to About Me</Link>
     </div>
   );
 };

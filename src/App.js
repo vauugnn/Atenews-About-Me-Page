@@ -1,12 +1,15 @@
 import React from 'react';
-import AboutMe from './AboutMe';
+import { Routes, Route } from 'react-router-dom';
+import AboutMe from './components/AboutMe';
+import Profile from './components/Profile';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <AboutMe />
-    </div>
+    <Routes>
+      <Route path="/" element={<AboutMe />} />
+      <Route path="/profile" element={<Profile />} />
+    </Routes>
   );
-}
+};
 
 export default App;

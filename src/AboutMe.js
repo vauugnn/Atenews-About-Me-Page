@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Card from './components/Card';
 import Introduction from './components/Introduction';
 import Likes from './components/Likes';
@@ -52,6 +53,8 @@ const AboutMe = () => {
           <img src="/assets/socmed/facebook.png" alt="Facebook" className="social-icon" />
         </a>
       </div>
+
+      <Link to="/profile">Go to Profile</Link>
     </div>
   );
 };
