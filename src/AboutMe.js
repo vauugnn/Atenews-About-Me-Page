@@ -5,36 +5,42 @@ import Likes from './components/Likes';
 import Dislikes from './components/Dislikes';
 import Hobbies from './components/Hobbies';
 import './AboutMe.css';
-import githubIcon from './assets/github-icon.png';
-import linkedinIcon from './assets/linkedin-icon.png';
-import instagramIcon from './assets/instagram-icon.png';
-import facebookIcon from './assets/facebook-icon.png';
 
 const AboutMe = () => {
   return (
-    <div className="max-w-md mx-auto p-4 bg-blue-100 min-h-screen">
-      <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-        <div className="bg-blue-500 h-24"></div>
-        <div className="relative px-4 py-5 sm:px-6 -mt-16 text-center">
-          <img
-            className="mx-auto h-32 w-32 rounded-full border-4 border-white"
-            src="/assets/Vaughn Roche de Roda.jpg"
-            alt="Vaughn Roche T. de Roda"
-          />
-          <h1 className="mt-2 text-2xl font-bold text-gray-900">
-            Vaughn Roche T. de Roda
-          </h1>
-          <p className="text-sm text-gray-600">
-            Bachelor of Science in Data Science | 1st Year
-            <br />
-            Birthday: December 22, 2004 | Age: 19
-          </p>
+    <div className="about-me-container">
+      <div className="profile-card">
+        <div className="profile-header"></div>
+        <div className="profile-content">
+          <div className="profile-image-container">
+            <img
+              className="profile-image"
+              src="/assets/Vaughn Roche de Roda.jpg"
+              alt="Vaughn Roche T. de Roda"
+            />
+          </div>
+          <div className="profile-info">
+            <h1 className="profile-name">Vaughn Roche T. de Roda</h1>
+            <p className="profile-details">
+              Bachelor of Science in Data Science | 1st Year
+              <br />
+              Birthday: December 22, 2004 | Age: 19
+            </p>
+          </div>
         </div>
 
-        <Card title="Introduction" content={<Introduction />} />
-        <Card title="Likes" content={<Likes />} />
-        <Card title="Dislikes" content={<Dislikes />} />
-        <Card title="Hobbies" content={<Hobbies />} />
+        <div className="profile-section">
+          <Card title="Introduction" content={<Introduction />} />
+        </div>
+        <div className="profile-section">
+          <Card title="Likes" content={<Likes />} />
+        </div>
+        <div className="profile-section">
+          <Card title="Dislikes" content={<Dislikes />} />
+        </div>
+        <div className="profile-section">
+          <Card title="Hobbies" content={<Hobbies />} />
+        </div>
 
         <div className="social-links-container">
             <div className="social-links">
